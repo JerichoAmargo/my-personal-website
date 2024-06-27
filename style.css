@@ -1,0 +1,76 @@
+/* Custom styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 20px;
+    background-color: black;
+    animation: blink-animation 1s steps(2) infinite;
+}
+
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+}
+
+/* Adjust section styles for better differentiation */
+#about {
+    background-color: #ffffff; /* White background */
+}
+
+#projects {
+    background-color: #343a40; /* Dark background */
+}
+
+#education {
+    background-color: #ffffff; /* White background */
+}
+
+#skills {
+    background-color: #343a40; /* Dark background */
+}
+
+#resume {
+    background-color: #ffffff; /* White background */
+}
+
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
