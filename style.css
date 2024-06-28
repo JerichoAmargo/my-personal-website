@@ -9,6 +9,9 @@ body {
 .navbar {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -25,7 +28,14 @@ body {
     font-size: 1.5rem;
     color: #343a40;
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+    color: #FEAE6F; /* Change this color to your preferred hover color */
+}
+
 
 .cursor {
     display: inline-block;
@@ -38,10 +48,10 @@ body {
 @keyframes blink-animation {
     0%, 100% {
         opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 /* Adjust section styles for better differentiation */
@@ -59,18 +69,53 @@ body {
 
 #skills {
     background-color: #343a40; /* Dark background */
+    padding-top: 80px; /* Adjust top padding for better spacing */
+    padding-bottom: 80px; /* Adjust bottom padding for better spacing */
 }
 
-#resume {
-    background-color: #ffffff; /* White background */
-}
-
-
-/* Card Styles */
-.card {
+#skills .card {
+    border: none; /* Remove default card border */
+    background-color: transparent; /* Transparent background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+#skills .card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+#skills .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.skill-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Spacing between icons */
+}
+
+#skills .card-text {
+    font-size: 1rem;
+    color: #868e96; /* Subdued text color */
+}
+
+#education .card {
+    border: none; /* Remove default card border */
+    background-color: transparent; /* Transparent background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    #skills {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #skills .card {
+        margin-bottom: 1.5rem;
+    }
 }
