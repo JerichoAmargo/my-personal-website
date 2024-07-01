@@ -1,4 +1,4 @@
-/* Custom styles */
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
@@ -36,7 +36,6 @@ body {
     color: #FEAE6F; /* Change this color to your preferred hover color */
 }
 
-
 .cursor {
     display: inline-block;
     width: 8px;
@@ -54,37 +53,119 @@ body {
     }
 }
 
-/* Adjust section styles for better differentiation */
-#about {
-    background-color: #ffffff; /* White background */
+/* Buttons */
+.btn-custom,
+.btn-secondary-modern {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#projects {
-    background-color: #343a40; /* Dark background */
+.btn-custom:hover,
+.btn-secondary-modern:hover {
+    transform: scale(1.05);
 }
 
+.btn-custom:focus,
+.btn-custom:active,
+.btn-secondary-modern:focus,
+.btn-secondary-modern:active {
+    box-shadow: 0 0 0 4px rgba(108, 117, 125, 0.4);
+}
+
+.btn-custom {
+    background-color: #FEAE6F;
+}
+
+.btn-custom:hover {
+    background-color: #f4a261;
+}
+
+.btn-secondary-modern {
+    background-color: #6c757d;
+}
+
+.btn-secondary-modern:hover {
+    background-color: #5a6268;
+}
+
+/* Close button styles */
+.btn-close-modern {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-close-modern:hover,
+.btn-close-modern:focus,
+.btn-close-modern:active {
+    color: #dc3545;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+    padding: 20px 30px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px 30px;
+}
+
+/* Section Styles */
+#about,
 #education {
     background-color: #ffffff; /* White background */
 }
 
+#projects,
 #skills {
     background-color: #343a40; /* Dark background */
+}
+
+#skills {
     padding-top: 80px; /* Adjust top padding for better spacing */
     padding-bottom: 80px; /* Adjust bottom padding for better spacing */
 }
 
-#skills .card {
+/* Card Styles */
+#skills .card,
+#education .card,
+.project-card {
     border: none; /* Remove default card border */
     background-color: transparent; /* Transparent background */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     transition: transform 0.3s ease;
 }
 
-#skills .card:hover {
+#skills .card:hover,
+#education .card:hover,
+.project-card:hover {
     transform: translateY(-5px); /* Lift card on hover */
 }
 
-#skills .card-title {
+.card-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -96,30 +177,37 @@ body {
     margin-bottom: 10px; /* Spacing between icons */
 }
 
-#skills .card-text {
+.card-text {
     font-size: 1rem;
     color: #868e96; /* Subdued text color */
 }
 
-#education .card {
-    border: none; /* Remove default card border */
-    background-color: transparent; /* Transparent background */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    transition: transform 0.3s ease;
+.project-card {
+    border-radius: 15px;
+    background-color: #ffffff2d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-#education .card:hover {
-    transform: translateY(-5px); /* Lift card on hover */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    #skills {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+.project-card .card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+}
 
-    #skills .card {
-        margin-bottom: 1.5rem;
-    }
+.project-card .card-text {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.project-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
 }
