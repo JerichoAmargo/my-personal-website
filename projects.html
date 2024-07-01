@@ -109,7 +109,31 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Inside the existing <div class="row"> after the first two columns -->
+                    <div class="col-md-6">
+                        <div class="card mb-4 project-card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Outlook mail Automation and Data Extraction Robot</h3>
+                                <img src="images/robot.png" class="img-fluid" alt="robot project">
+                                <p class="card-text">Automated Outlook email extraction to Excel, focusing on specific text (time, date, message content, errors) based on email subjects. Streamlined workforce tasks by enhancing email data handling efficiency.</p>
+                                <p class="card-text"><strong>Role:</strong> RPA Developer Intern</p>
+                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#outlookModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 project-card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Client Hub Enhancement: POC Management and QR Code Survey Integration</h3>
+                                <img src="images/clienthub.png" class="img-fluid" alt="cliethub project">
+                                <p class="card-text">Optimize Point of Contact (POC) management in Client Hub for streamlined interactions. Integrate QR code surveys to enhance client feedback and service evaluation.</p>
+                                <p class="card-text"><strong>Role:</strong> RPA Developer Intern</p>
+                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#clienthubModal">View</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -136,31 +160,31 @@
                         <div id="icerightCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="images/iceright/gui1.PNG" class="d-block w-100" alt="Iceright GUI 1">
+                                    <img src="images/iceright/gui1.png" class="d-block w-100" alt="Iceright GUI 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui2.PNG" class="d-block w-100" alt="Iceright GUI 2">
+                                    <img src="images/iceright/gui2.png" class="d-block w-100" alt="Iceright GUI 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui3.PNG" class="d-block w-100" alt="Iceright GUI 3">
+                                    <img src="images/iceright/gui3.png" class="d-block w-100" alt="Iceright GUI 3">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui4.PNG" class="d-block w-100" alt="Iceright GUI 4">
+                                    <img src="images/iceright/gui4.png" class="d-block w-100" alt="Iceright GUI 4">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui5.PNG" class="d-block w-100" alt="Iceright GUI 5">
+                                    <img src="images/iceright/gui5.png" class="d-block w-100" alt="Iceright GUI 5">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui6.PNG" class="d-block w-100" alt="Iceright GUI 6">
+                                    <img src="images/iceright/gui6.png" class="d-block w-100" alt="Iceright GUI 6">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui7.PNG" class="d-block w-100" alt="Iceright GUI 7">
+                                    <img src="images/iceright/gui7.png" class="d-block w-100" alt="Iceright GUI 7">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui8.PNG" class="d-block w-100" alt="Iceright GUI 8">
+                                    <img src="images/iceright/gui8.png" class="d-block w-100" alt="Iceright GUI 8">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/iceright/gui9.PNG" class="d-block w-100" alt="Iceright GUI 9">
+                                    <img src="images/iceright/gui9.png" class="d-block w-100" alt="Iceright GUI 9">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#icerightCarousel" data-bs-slide="prev">
@@ -256,6 +280,55 @@
                 </div>
             </div>
         </div>
+        <!-- Outlook Mail Modal -->
+        <div class="modal fade" id="outlookModal" tabindex="-1" aria-labelledby="outlookModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="outlookModalLabel">Outlook Mail Automation and Data Extraction Robot</h5>
+                        <button type="button" class="btn-close btn-close-modern" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Developed a robot that automates workforce tasks.</li>
+                            <li>Automated Outlook email extraction to an Excel file.</li>
+                            <li>Extracted specific text from email bodies (time, date, message, error message) based on email subject.</li>
+                        </ul>
+                        <p><strong>Technologies used:</strong> <img src="images/uipath.png" alt="UiPath" class="skill-icon" data-bs-toggle="tooltip" title="UiPath"> UiPath, <img src="images/vbnet.png" alt="VB.NET" class="skill-icon" data-bs-toggle="tooltip" title="VB.NET"> VB.NET</p>
+                        <p><strong>Role:</strong> RPA Developer Intern</p>
+                        <!-- Include project details or additional images if needed -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary-modern" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Hub Modal -->
+        <div class="modal fade" id="clienthubModal" tabindex="-1" aria-labelledby="clienthubModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="clienthubModalLabel">Client Hub Enhancement: POC Management and QR Code Survey Integration</h5>
+                        <button type="button" class="btn-close btn-close-modern" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Implement and optimize Point of Contact (POC) management within the Client Hub to streamline client interactions.</li>
+                            <li>Integrate QR code surveys to gather client feedback efficiently and enhance service evaluation processes.</li>
+                        </ul>
+                        <p><strong>Technologies used:</strong> <img src="images/csharp.png" alt="Csharp" class="skill-icon" data-bs-toggle="tooltip" title="Csharp"> C# <img src="images/pgadmin.png" alt="Postgresql" class="skill-icon" data-bs-toggle="tooltip" title="PostgreSQL"> PostgreSQL</p>
+                        <p><strong>Role:</strong> RPA Developer Intern</p>
+                        <!-- Include project details or additional images if needed -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary-modern" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     
