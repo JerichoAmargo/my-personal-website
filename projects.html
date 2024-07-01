@@ -12,6 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card {
+            border-radius: 15px;
+            background-color: #ffffff2d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-card .card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+        
+        .project-card .card-text {
+            font-size: 1rem;
+            color: #202020;
+        }
+        
+        .project-card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+        }
+        
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -47,12 +79,186 @@
     </nav>
 
     <!-- Main Content -->
-    <main style="padding-top: 100px;">
-        <div class="container text-center">
-            <h1>Projects</h1>
-            <p>Coming Soon</p>
+    <main style="padding-top: 70px;">
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-heading text-center mb-5">Projects</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 project-card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Iceright: Digitalization Solution for Manalo Ice Plant</h3>
+                                <div class="text-center">
+                                    <img src="images/iceright.png" class="img-fluid" alt="Iceright Project">
+                                </div>
+                                <p class="card-text">A CRM system with sales reports for analytics, developed using HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, and AWS.</p>
+                                <p class="card-text"><strong>Role:</strong> Developer and Quality Assurance</p>
+                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#icerightModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 project-card">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">SPEEDTECH IT Store and Services Web-Based System</h3>
+                                <img src="images/speed.png" class="img-fluid" alt="SPEEDTECH IT Project">
+                                <p class="card-text">An e-commerce platform designed for IT products and services, implemented with PHP, HTML, CSS, JavaScript, and MySQL.</p>
+                                <p class="card-text"><strong>Role:</strong> Developer</p>
+                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#speedtechModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Iceright Modal -->
+        <div class="modal fade" id="icerightModal" tabindex="-1" aria-labelledby="icerightModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="icerightModalLabel">Iceright: Digitalization Solution for Manalo Ice Plant</h5>
+                        <button type="button" class="btn-close btn-close-modern" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A CRM system with sales reports for analytics, developed using HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, and AWS.</p>
+                        <p><strong>Role:</strong> Developer and Quality Assurance</p>
+                        <div class="text-center mb-3">
+                            <img src="images/html.png" alt="HTML" class="skill-icon" data-bs-toggle="tooltip" title="HTML">
+                            <img src="images/css.png" alt="CSS" class="skill-icon" data-bs-toggle="tooltip" title="CSS">
+                            <img src="images/javascript.png" alt="JavaScript" class="skill-icon" data-bs-toggle="tooltip" title="JavaScript">
+                            <img src="images/bootstrap.png" alt="Bootstrap" class="skill-icon" data-bs-toggle="tooltip" title="Bootstrap">
+                            <img src="images/php.png" alt="PHP" class="skill-icon" data-bs-toggle="tooltip" title="PHP">
+                            <img src="images/sql.png" alt="MySQL" class="skill-icon" data-bs-toggle="tooltip" title="MySQL">
+                            <img src="images/aws.png" alt="AWS" class="skill-icon" data-bs-toggle="tooltip" title="AWS">
+                        </div>
+                        <div id="icerightCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/iceright/gui1.png" class="d-block w-100" alt="Iceright GUI 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui2.png" class="d-block w-100" alt="Iceright GUI 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui3.png" class="d-block w-100" alt="Iceright GUI 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui4.png" class="d-block w-100" alt="Iceright GUI 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui5.png" class="d-block w-100" alt="Iceright GUI 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui6.png" class="d-block w-100" alt="Iceright GUI 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui7.png" class="d-block w-100" alt="Iceright GUI 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui8.png" class="d-block w-100" alt="Iceright GUI 8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/iceright/gui9.png" class="d-block w-100" alt="Iceright GUI 9">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#icerightCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#icerightCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary-modern" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speedtech Modal -->
+        <div class="modal fade" id="speedtechModal" tabindex="-1" aria-labelledby="speedtechModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="speedtechModalLabel">SPEEDTECH IT Store and Services Web-Based System</h5>
+                        <button type="button" class="btn-close btn-close-modern" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>An e-commerce platform designed for IT products and services, implemented with PHP, HTML, CSS, JavaScript, and MySQL.</p>
+                        <p><strong>Role:</strong> Developer</p>
+                        <div class="text-center mb-3">
+                            <img src="images/php.png" alt="PHP" class="skill-icon" data-bs-toggle="tooltip" title="PHP">
+                            <img src="images/html.png" alt="HTML" class="skill-icon" data-bs-toggle="tooltip" title="HTML">
+                            <img src="images/css.png" alt="CSS" class="skill-icon" data-bs-toggle="tooltip" title="CSS">
+                            <img src="images/javascript.png" alt="JavaScript" class="skill-icon" data-bs-toggle="tooltip" title="JavaScript">
+                            <img src="images/sql.png" alt="MySQL" class="skill-icon" data-bs-toggle="tooltip" title="MySQL">
+                        </div>
+                        <div id="speedtechCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/speedtech/gui1.PNG" class="d-block w-100" alt="SPEEDTECH GUI 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui2.PNG" class="d-block w-100" alt="SPEEDTECH GUI 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui3.PNG" class="d-block w-100" alt="SPEEDTECH GUI 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui4.PNG" class="d-block w-100" alt="SPEEDTECH GUI 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui5.PNG" class="d-block w-100" alt="SPEEDTECH GUI 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui6.PNG" class="d-block w-100" alt="SPEEDTECH GUI 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui7.PNG" class="d-block w-100" alt="SPEEDTECH GUI 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui8.PNG" class="d-block w-100" alt="SPEEDTECH GUI 8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui9.PNG" class="d-block w-100" alt="SPEEDTECH GUI 9">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui10.PNG" class="d-block w-100" alt="SPEEDTECH GUI 10">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui11.PNG" class="d-block w-100" alt="SPEEDTECH GUI 11">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui12.PNG" class="d-block w-100" alt="SPEEDTECH GUI 12">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/speedtech/gui13.PNG" class="d-block w-100" alt="SPEEDTECH GUI 13">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#speedtechCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#speedtechCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary-modern" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    
 
     <!-- Footer -->
     <footer class="py-4 bg-dark">
